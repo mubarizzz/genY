@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	background: #292059;
+	color: white;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.status {
+	background-color: #a0a1ca;
+	color: #292059;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.status_1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.status_bar {
+	background-color: #eff3ff;
+	width: 35rem;
+	height: 1.6rem;
+}
+
+.status_bar_1 {
+	background-color: #74ed31;
+	width: 15%;
+	height: 1.6rem;
+}
+
+.q {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 1.5rem 3.5rem;
+}
+
+.question {
+	/* margin: 2rem 0; */
+	height: 2rem;
+	width: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #a0a1ca;
+	color: #292059;
+	border-radius: 50%;
+}
+
+#qq {
+	background-color: #292059;
+	color: #a0a1ca;
+}
+
+.ques {
+	font-size: 1.2rem;
+	color: #292059;
+	margin: 0 3rem;
+}
+.ques h3 {
+	line-height: 2rem;
+}
+
+.options {
+	margin: 5rem 3rem;
+	color: #292059;
+	font-size: large;
+	font-weight: bold;
+}
+
+.option {
+	border: 0.1rem solid #a0a1ca;
+	border-radius: 0.6rem;
+	height: 2.8rem;
+	width: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.option_1 {
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#opp {
+	margin-top: 2rem;
+}
+
+.buttons {
+	color: #eff3ff;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.button {
+	background-color: #292059;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 2.5em;
+	width: 7%;
+	border-radius: 0.6rem;
+	margin-bottom: 3em;
+	cursor: pointer;
+}
+
+@media all and (max-width: 425px) {
+	.status {
+		justify-content: space-between;
+		padding: 0 1rem;
+	}
+	.status_bar {
+		width: 10rem;
+		height: 0.8rem;
+	}
+	.status_bar_1 {
+		height: 0.8rem;
+	}
+
+	.ques {
+		margin: 0 0.4rem;
+		font-size: 0.8rem;
+	}
+	.ques h3 {
+		line-height: 1.5rem;
+	}
+	.options {
+		margin: 1.5rem 2rem;
+	}
+	.option {
+		width: 100%;
+	}
+	.option_1 {
+		width: 100%;
+		display: block;
+	}
+	#opp {
+		margin-top: 0;
+	}
+	.option_1 div {
+		margin-bottom: 0.8rem;
+	}
+
+	.button {
+		width: 30%;
+		margin-bottom: 1rem;
+	}
+	.questions {
+		display: block;
+		width: 100%;
+		margin: 1.5rem auto;
+		overflow-x: scroll;
+	}
+	.q {
+		display: block;
+		white-space: nowrap;
+	}
+	.question {
+		display: inline-block;
+		margin-right: 10px;
+		text-align: center;
+	}
+}
